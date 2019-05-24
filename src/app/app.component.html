@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<table style="border-collapse: collapse;">
+  <thead>
+  <tr>
+    <th>债券名称</th>
+    <th>代码</th>
+    <th>价格</th>
+    <th>field1</th>
+    <th>field2</th>
+    <th>field3</th>
+    <th>field4</th>
+    <th>field5</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td>{{row.name}}</td>
+      <td>{{row.code}}</td>
+      <td>{{row.price}}</td>
+      <td *ngFor="let field of row.fields">{{field}}</td>
+    </tr>
+  </tbody>
+</table>
+
